@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial HTML y CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Como usar HTML y CSS</h1>
+    </header>
+<section class=encabezado>
+   <p> Para iniciar en HTML se debe conseguir como primera medida un editor de texto. Notepad TextEdit HTML Kit dependiendo del sistema operativo. </p>
+</section>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Paso 1</a></li>
+            <li><a href="#section2">Paso 2</a></li>
+            <li><a href="#section3">Paso 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Paso 1 Crear HTML</h2>
+            <p>Abrir el editor de texto e ingresar las etiquetas correspondientes a HTML
+            <lo>
+            <li>!DOCTYPE></li>
+            <li>html></li>
+            <li>head></li>
+            <li>title>Mi primera página con estilo< /title></li>
+            <li>/head></li>
+
+            <li>body></li>
+
+
+            <li>ul class="navbar"></li>
+            <li>< li> < a href="indice.html">Página principal< /a></li>
+            <li>< li>< a href="meditaciones.html">Meditaciones< /a></li>
+            <li>< li>< a href="ciudad.html">Mi ciudad< /a></li>
+            <li>< li>< a href="enlaces.html">Enlaces< /a></li>
+            <li>< /ul></li>
+
+            <li>< h1>Mi primera página con estilo< /h1></li>
+
+            <li>< p>No tiene imágenes, pero tiene estilo.</li>
+            <li>También tiene enlaces, aunque no te lleven a</li>
+            <li>ningún sitio…</li>
+
+            <li>< p>Debería haber más cosas aquí, pero todavía no sé
+            qué poner.
+
+            address>Creada el 5 de abril de 2004< br>
+              por mí mismo.< /address></li>
+
+
+            <li>< /body></li>
+            <li>< /html> --></li>
+
+            </lo>
+
+
+            <p>La primera linea que dice HTML (DOCTYPE significa DOCument TYPE) es tipo de documento
+            Las palabras que se encuentran entre < y > se llaman etiquetas, entre estas estan < html > y < /html > < head > y < /head > < body >
+            De las etiquetas del ejemplo, < ul > crea una “lista desordenada”, es decir, una lista en la cual los elementos no están numerados. La etiqueta < li > indica el comienzo de un “elemento lista”. < p > es un “párrafo”. Y < a > es un “enlace”, que es lo que crea un hipervínculo.
+            Este archivo se debe crear como archivo.html en algun lugar del ordenador</p> 
+
+                <img src="/Evidencia/etiquetas.jpg" width="400px">
+
+
+        </section>
+
+<hr>
+        <section id="section2">
+            <h2>Paso 2 Añadir estilos</h2>
+            <p>Comenzaremos con una hoja de estilo interna en el archivo HTML.
+            La separación de estos archivos es recomendable ya que facilita la utilización de la misma hoja de estilo para diferentes archivos HTML: sólo tienes que escribir la hoja de estilo una vez. Pero en este paso, vamos a dejarlo todo en el mismo archivo.
+            Necesitamos añadir un elemento < style> en el archivo HTML. La hoja de estilo estará en el interior de ese elemento. Volvamos entonces a la ventana del editor y añadamos las siguientes cinco líneas en la parte de la cabecera del archivo:
+            <lo>
+                <li>< !DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"></li>
+                <li>< htmlC ></li>
+                <li>< head ></li>
+                <li>< title>Mi primera página con estilo< / title ></li>
+                <li>< style type="text/css"></li>
+                <li>body {</li>
+                <li>color: purple;</li>
+                <li>background-color: #d8da3d }</li>
+                <li>< /style></li>
+                <li>< /head></li>
+
+                <li>< body></li>
+            </lo>
+
+            Las hojas de estilo en CSS están compuestas de reglas. Cada regla tiene tres partes:
+
+            el selector (en el ejemplo sería: “body”), el cual le dice al navegador la parte del documento que se verá afectada por la regla;
+            la propiedad (en el ejemplo, 'color' y 'background-color' son ambas propiedades), las cuales especifican qué aspecto del diseño va a cambiarse;
+            y el valor ('purple' y '#d8da3d'), el cual da el valor para la propiedad.
+            El ejemplo muestra que es posible combinar las reglas. Hemos establecido dos propiedades, por lo que podemos tener dos reglas separadas:
+            </p>
+              <img src="/Evidencia/css.png" width="400px">
+        </section>
+
+
+
+<hr>
+        <section id="section3">
+            <h2>Paso 3 Anadir letra</h2>
+            <p>Añade en el editor de texto las siguientes líneas:
+
+                    <lo>
+                    <li>< !DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" ></li>
+                    <li>< html></li>
+                    <li>< head></li>
+                    <li>< title>Mi primera página con estilo< /title ></li>
+                    <li>< style type="text/css"></li>
+                    <li>body {</li>
+                    <li>font-family: Georgia, "Times New Roman",
+                              Times, serif;
+                        color: purple;
+                        background-color: #d8da3d }
+                      h1 {
+                        font-family: Helvetica, Geneva, Arial,
+                              SunSans-Regular, sans-serif }</li>
+                    <li>< /style></li>
+                    <li>< /head></li>
+
+                    <li>< body></li>
+                    [etc.]
+                    </lo>
+
+                    Veamos el texto con el tipo de letra “Georgia”, excepto la cabecera h1, que irá con “Helvetica”.
+
+                    En la Web, nunca puedes estar seguro de los tipos de letra que los usuarios tienen en sus ordenadores, por lo que añadiremos algunas alternativas: si Georgia no está disponible, Times New Roman o Times también pueden valer, y si ninguna de esas está presente, el navegador puede utilizar cualquier otro tipo de letra con serifs. 
+                    </p>
+                    
+        </section>
+<hr>
+
+</main>
+
+
+<hr>
+
+    <footer>
+        <p>&copy; 2024 Tutorial HTML y CSS</p>
+    </footer>
+</body>
+</html>
